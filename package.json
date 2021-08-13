@@ -1,0 +1,32 @@
+{
+  "name": "tiny-admin",
+  "version": "1.0.0",
+  "description": "Very small set of web APIs in a polka project providing login access to machine and net resource for viewing ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/copious-world/tiny-admin.git"
+  },
+  "keywords": [
+    "admin",
+    "network",
+    "config",
+    "stat",
+    "os",
+    "stat"
+  ],
+  "author": "Richard Leddy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/copious-world/tiny-admin/issues"
+  },
+  "homepage": "https://github.com/copious-world/tiny-admin#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "polka": "^0.5.2"
+  }
+}
