@@ -83,6 +83,12 @@
     background: linear-gradient(to right, #cfeb90, #fdf8cb);
   }
 
+  .user-section {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right, #cfeb90, #fdf8cb);
+  }
+
   .token-display {
     color:aqua;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -109,9 +115,9 @@
 {/if}
 
 {#if logged_in }
-<section>
+<div class="user-section">
   <InfoForm {token} {known_port} />
-</section>
+</div>
 {:else}
 <section>
   <LoginForm {submit} on:message={handle_message} />

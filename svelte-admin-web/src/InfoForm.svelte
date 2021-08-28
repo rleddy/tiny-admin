@@ -223,10 +223,11 @@
     background: black;
     color: white;
     padding: 10px 0;
-    width: 100px;
+    width:fit-content;
     border-radius: 15px;
     text-transform: uppercase;
     font-weight: bold;
+    font-size:0.85em;
     cursor: pointer;
     transition: all 300ms ease-in-out;
   }
@@ -255,10 +256,11 @@
     text-align: center;
   }
 </style>
-
 <div>
   <button on:click={handleConnectedIPSReq}>get connected ips</button>
-  <button on:click={handleIPSReq}>get lan ips</button>
+  <button on:click={handleIPSReq}>get lan ips</button>  
+</div>
+<div>
   {#if have_info}
   <div>
     {@html informed}
